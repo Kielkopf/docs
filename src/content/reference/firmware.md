@@ -360,7 +360,7 @@ You can register a method in a C++ object as a subscription handler.
 ```cpp
 class Subscriber {
   public:
-    void subscribe() {
+    void Subscriber() {
       Particle.subscribe("some_event", &Subscriber::handler, this);
     }
     void handler(const char *eventName, const char *data) {
